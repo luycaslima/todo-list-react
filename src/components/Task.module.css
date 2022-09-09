@@ -1,0 +1,64 @@
+.taskWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--gray-500);
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem 0;
+}
+
+.taskWrapper  div{
+    display: flex;
+    gap: 1rem;
+}
+
+.taskWrapper span {
+    cursor: pointer;
+    align-items: center;
+    display: flex;
+    padding: 1px;
+    color: var(--blue);
+    max-height: 24px;
+    margin: auto;
+}
+
+
+.taskTextCompleted{
+    text-decoration: line-through;
+    color: var(--gray-300);
+}
+
+.taskTextNotCompleted{
+    text-decoration: none;
+    color: var(--gray-200);
+}
+
+.taskWrapper button{
+    background: transparent;
+    border: 0;
+    color: var(--gray-300);
+    cursor: pointer;
+    padding: 0.25rem;
+    line-height: 0;
+    border-radius: 4px;
+}
+
+.taskNotCompleted{
+    background: transparent;
+
+}
+.taskCompleted{
+    background: var(--purple);
+    color: var(--gray-100);
+    border-radius: 16px;
+}
+
+.taskCompleted span{
+    color: var(--gray-100);
+}
+
+.taskWrapper button:hover{
+    color: var(--danger);
+    background: var(--gray-400);
+}
